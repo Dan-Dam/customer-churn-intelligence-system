@@ -1,17 +1,7 @@
 # 🚀 Customer Churn Intelligence System
 
-## AI-Powered Customer Retention & Revenue Intelligence Platform
-
 <p align="center">
-  <img src="assets/churn_banner.png" width="100%">
-</p>
-
-<p align="center">
-  <strong>Predict. Understand. Act. Retain.</strong>
-</p>
-
-<p align="center">
-  Enterprise Customer Churn Prediction • Explainable AI • Executive Analytics • Revenue Intelligence
+  <img src="app/assets/banner_readme.png" width="100%">
 </p>
 
 <div align="center">
@@ -20,55 +10,114 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Enterprise_App-red?style=for-the-badge\&logo=streamlit)
 ![XGBoost](https://img.shields.io/badge/Machine_Learning-XGBoost-success?style=for-the-badge)
 ![SHAP](https://img.shields.io/badge/Explainable_AI-SHAP-purple?style=for-the-badge)
+![OpenAI](https://img.shields.io/badge/AI-OpenAI-black?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)
 
 </div>
 
 ---
 
-## Overview
+## 🌐 Live Demo
 
-The Customer Churn Intelligence System is an end-to-end machine learning platform that predicts customer churn, explains prediction drivers using SHAP, quantifies retention opportunities, and delivers executive analytics for data-driven retention strategies.
-
-Built using Python, XGBoost, SHAP, Streamlit, Plotly, and OpenAI, the platform transforms customer data into actionable business intelligence.
+🚀 **Application:** *(Add your Streamlit deployment URL here after deployment)*
 
 ---
 
-## Key Results
+## 📖 Overview
 
-| Metric                        | Value    |
-| ----------------------------- | -------- |
-| Accuracy                      | 90%      |
-| ROC-AUC                       | 0.862    |
-| F1 Score                      | 0.67     |
-| Customers Analyzed            | 793      |
-| Orders Processed              | 5,009    |
-| Transactions Analyzed         | 9,994    |
-| Churn Risk Index              | 49.01%   |
-| Retention Revenue Opportunity | $925,861 |
+An enterprise-grade AI-powered retention intelligence platform that predicts customer churn, explains prediction drivers using Explainable AI (SHAP), quantifies revenue risk, and delivers executive-level business insights for proactive customer retention strategies.
+
+Built with **Python, XGBoost, SHAP, OpenAI, and Streamlit**, the platform transforms customer data into actionable business intelligence and decision support.
 
 ---
 
-## 🌐 Live Application
+## 🚀 Why This Project Matters
 
-### 🚀 Launch App
+Customer churn is one of the largest drivers of revenue loss across retail, SaaS, telecommunications, banking, healthcare, insurance, and subscription-based businesses.
 
-[![Open Streamlit App](https://img.shields.io/badge/Launch-Live%20Application-red?style=for-the-badge\&logo=streamlit)](YOUR_DEPLOYMENT_LINK)
+Traditional reporting often identifies churn after customers have already disengaged.
 
-### Deployment Status
+This platform demonstrates how machine learning, explainable AI, and business intelligence can be combined to:
 
-| Service               | Status        |
-| --------------------- | ------------- |
-| Streamlit Application | ✅ Live        |
-| Prediction Engine     | ✅ Operational |
-| Explainable AI        | ✅ Enabled     |
-| Executive Analytics   | ✅ Active      |
-| Batch Prediction      | ✅ Available   |
-| AI Copilot            | ✅ Available   |
+* Predict churn before it occurs
+* Prioritize retention efforts
+* Identify revenue exposure
+* Explain model decisions
+* Improve customer lifetime value
+* Support executive decision-making
 
-**Live URL:**
-https://your-app-url.streamlit.app
+---
+
+## 📊 Business Impact
+
+| KPI                            |    Value |
+| ------------------------------ | -------: |
+| Model Accuracy                 |      90% |
+| ROC-AUC Score                  |    0.862 |
+| F1 Score                       |     0.67 |
+| Customers Analyzed             |      793 |
+| Orders Processed               |    5,009 |
+| Transactions Analyzed          |    9,994 |
+| Churn Risk Index               |   49.01% |
+| Revenue Opportunity Identified | $925,861 |
+
+---
+
+## 📂 Dataset
+
+This project was developed using the Superstore Customer Analytics Dataset, containing:
+
+| Metric | Value |
+|---------|------:|
+| Customers | 793 |
+| Orders | 5,009 |
+| Transactions | 9,994 |
+
+The dataset was transformed into a customer-level analytical dataset and enriched with churn intelligence features for predictive modeling, customer segmentation, revenue opportunity analysis, and retention strategy evaluation.
+
+---
+
+## 🏆 Project Highlights
+
+✔ End-to-End Machine Learning Solution
+
+✔ Production-Ready Streamlit Application
+
+✔ Explainable AI Using SHAP
+
+✔ OpenAI-Powered Copilot
+
+✔ Executive KPI Dashboard
+
+✔ Revenue Opportunity Intelligence
+
+✔ Customer Risk Segmentation
+
+✔ Batch Prediction Engine
+
+✔ Business-Oriented Decision Intelligence
+
+✔ Interactive Analytics & Reporting
+
+---
+
+## 🎯 Skills Demonstrated
+
+* Machine Learning
+* Classification Modeling
+* Customer Analytics
+* Explainable AI (SHAP)
+* Feature Engineering
+* Predictive Analytics
+* Business Intelligence
+* Executive Reporting
+* Data Visualization
+* AI Application Development
+* Streamlit Development
+* OpenAI Integration
+* XGBoost Modeling
+* Decision Intelligence
+* Revenue Analytics
 
 ---
 
@@ -80,7 +129,7 @@ https://your-app-url.streamlit.app
 
 ### Executive Analytics
 
-![Analytics](assets/screenshots/analytics.png)
+![Executive Analytics](assets/screenshots/analytics.png)
 
 ### Batch Prediction Engine
 
@@ -92,276 +141,79 @@ https://your-app-url.streamlit.app
 
 ---
 
-## Dataset & Portfolio Snapshot
-
-### Superstore Customer Analytics Dataset
-
-| Metric                        | Value    |
-| ----------------------------- | -------- |
-| Customers                     | 793      |
-| Orders                        | 5,009    |
-| Transactions                  | 9,994    |
-| Churn Risk Index              | 49.01%   |
-| Retention Revenue Opportunity | $925,861 |
-
----
-
-## Risk Intelligence Framework
-
-| Churn Probability | Risk Level       |
-| ----------------- | ---------------- |
-| 0% - 39%          | 🟢 Low Risk      |
-| 40% - 59%         | 🟡 Medium Risk   |
-| 60% - 79%         | 🟠 High Risk     |
-| 80% - 100%        | 🔴 Critical Risk |
-
-### Current Portfolio Distribution
-
-| Segment          | Customers |
-| ---------------- | --------- |
-| 🟢 Low Risk      | 411       |
-| 🟡 Medium Risk   | 7         |
-| 🟠 High Risk     | 12        |
-| 🔴 Critical Risk | 363       |
-
----
-
-## Project Highlights
-
-* End-to-End Machine Learning Pipeline
-* XGBoost Churn Prediction Model
-* SHAP Explainable AI
-* Executive Analytics Dashboard
-* Revenue Opportunity Intelligence
-* Customer Risk Segmentation
-* Batch Prediction Engine
-* AI Copilot Integration
-* What-If Scenario Simulator
-* Model Monitoring & Drift Detection
-* PDF, Excel & CSV Reporting
-* Interactive Business Intelligence Visualizations
-
-
-
-
-# 🚀 Customer Churn Intelligence System
-
-## AI-Powered Customer Retention & Revenue Intelligence Platform
-
-<p align="center">
-  <img src="assets/churn_banner.png" width="100%">
-</p>
-
-<p align="center">
-  <strong>Predict. Understand. Act. Retain.</strong>
-</p>
-
-<p align="center">
-  Enterprise Customer Churn Prediction • Explainable AI • Executive Analytics • Revenue Intelligence
-</p>
-
----
-
-## Overview
-
-The Customer Churn Intelligence System is an end-to-end machine learning platform that predicts customer churn, explains prediction drivers using SHAP, quantifies retention opportunities, and delivers executive analytics for data-driven retention strategies.
-
-Built using Python, XGBoost, SHAP, Streamlit, Plotly, and OpenAI, the platform transforms customer data into actionable business intelligence.
-
----
-
-## Key Results
-
-| Metric                        | Value    |
-| ----------------------------- | -------- |
-| Accuracy                      | 90%      |
-| ROC-AUC                       | 0.862    |
-| F1 Score                      | 0.67     |
-| Customers Analyzed            | 793      |
-| Orders Processed              | 5,009    |
-| Transactions Analyzed         | 9,994    |
-| Churn Risk Index              | 49.01%   |
-| Retention Revenue Opportunity | $925,861 |
-
----
-
-## Platform Preview
-
-### Executive Dashboard
-
-![Dashboard](assets/screenshots/dashboard.png)
-
-### Executive Analytics
-
-![Analytics](assets/screenshots/analytics.png)
-
-### Batch Prediction Engine
-
-![Batch Prediction](assets/screenshots/batch_prediction.png)
-
-### Explainable AI (SHAP)
-
-![SHAP](assets/screenshots/shap_analysis.png)
-
----
-
-## Business Problem
-
-Customer churn is one of the most significant drivers of revenue loss across retail, SaaS, telecommunications, banking, healthcare, insurance, and subscription-based businesses.
-
-Traditional reporting identifies churn after customers have already disengaged.
-
-This platform enables organizations to:
-
-* Predict churn before it occurs
-* Prioritize retention efforts
-* Identify revenue exposure
-* Explain model decisions
-* Optimize customer lifetime value
-* Support executive decision-making
-
----
-
-## Dataset Overview
-
-### Superstore Customer Analytics Dataset
-
-| Metric       | Value |
-| ------------ | ----- |
-| Customers    | 793   |
-| Orders       | 5,009 |
-| Transactions | 9,994 |
-
----
-
-## Customer Risk Segmentation Framework
-
-| Churn Probability | Risk Level       |
-| ----------------- | ---------------- |
-| 0% – 39%          | 🟢 Low Risk      |
-| 40% – 59%         | 🟡 Medium Risk   |
-| 60% – 79%         | 🟠 High Risk     |
-| 80% – 100%        | 🔴 Critical Risk |
-
-### Current Portfolio Distribution
-
-| Segment          | Customers |
-| ---------------- | --------- |
-| 🟢 Low Risk      | 411       |
-| 🟡 Medium Risk   | 7         |
-| 🟠 High Risk     | 12        |
-| 🔴 Critical Risk | 363       |
-
----
-
-## Project Highlights
-
-* End-to-End Machine Learning Pipeline
-* XGBoost Churn Prediction Model
-* SHAP Explainable AI
-* Executive Analytics Dashboard
-* Revenue Opportunity Intelligence
-* Batch Prediction Engine
-* Customer Risk Segmentation
-* AI Copilot Assistance
-* What-If Scenario Simulator
-* Drift Monitoring & Governance
-* PDF, Excel & CSV Reporting
-* Interactive Business Intelligence Visualizations
-
----
-
-## Machine Learning Architecture
-
-### Problem Type
-
-Binary Classification
-
-Target Variable:
-
-0 = Retained Customer
-
-1 = Churned Customer
-
-### Model
-
-XGBoost Classifier
-
-### Performance
-
-| Metric   | Score |
-| -------- | ----- |
-| Accuracy | 90%   |
-| ROC-AUC  | 0.862 |
-| F1 Score | 0.67  |
-
----
-
-## Explainable AI
-
-The platform uses SHAP (SHapley Additive exPlanations) to provide:
-
-* Feature Attribution
-* Local Prediction Explanations
-* Waterfall Visualizations
-* Transparent Decision Support
-* Business-Friendly Interpretability
-
-This enables stakeholders to understand why predictions are generated rather than relying on black-box outputs.
-
----
-
-## Executive Analytics
-
-Key analytics capabilities include:
-
-* Customer Segmentation
-* Cohort Risk Analysis
-* Revenue Opportunity Intelligence
-* Customer Health Monitoring
-* Churn Exposure Analysis
-* Portfolio Risk Assessment
-* Executive KPI Dashboards
-
----
-
-## Platform Features
+## ✨ Key Features
 
 ### Predictive Intelligence
 
+* Customer Churn Prediction
 * Churn Probability Scoring
 * Risk Classification
 * Confidence Scoring
-* Batch Predictions
+* Batch Prediction Engine
 
 ### Explainable AI
 
-* SHAP Waterfall Analysis
+* SHAP Feature Attribution
+* Local Prediction Explanations
 * Feature Impact Analysis
-* Model Transparency
+* Transparent Model Decisions
+* Business-Friendly Interpretability
 
-### Decision Intelligence
+### Executive Analytics
 
-* Executive KPI Dashboards
+* Customer Risk Segmentation
+* Customer Health Monitoring
 * Revenue Opportunity Analysis
-* Risk Segmentation
+* Customer Portfolio Assessment
+* KPI Performance Tracking
 
-### Monitoring
+### AI Assistance
+
+* OpenAI-Powered Copilot
+* Insight Generation
+* Strategic Recommendations
+* Business Decision Support
+
+### Monitoring & Governance
 
 * Prediction Logging
+* Model Monitoring
+* Performance Tracking
 * Drift Monitoring
-* Latency Tracking
-* Model Performance Monitoring
-
-### Simulation
-
-* What-If Scenarios
-* Retention Strategy Testing
-* Revenue Impact Forecasting
+* Explainability Monitoring
 
 ---
 
-## Technology Stack
+## 💰 Revenue Opportunity Framework
+
+The platform identifies customers most likely to churn and estimates potential revenue exposure, enabling organizations to prioritize retention actions based on business impact rather than intuition.
+
+### Estimated Revenue Opportunity
+
+# $925,861
+
+Potential revenue identified for proactive retention initiatives and churn prevention strategies.
+
+---
+
+## 🧠 Explainable AI (SHAP)
+
+Traditional machine learning models often operate as black boxes.
+
+This platform integrates **SHAP (SHapley Additive exPlanations)** to provide:
+
+* Feature-Level Prediction Explanations
+* Driver Analysis for Churn Behavior
+* Waterfall Explanations
+* Business-Friendly Model Transparency
+* Trustworthy AI Decision Support
+* Actionable Retention Insights
+
+This ensures that stakeholders understand *why* a prediction was generated, not just *what* was predicted.
+
+---
+
+## ⚙️ Technology Stack
 
 ### Machine Learning
 
@@ -369,10 +221,13 @@ Key analytics capabilities include:
 * XGBoost
 * Scikit-Learn
 * SHAP
-* NumPy
-* Pandas
 
-### Visualization
+### Data Processing
+
+* Pandas
+* NumPy
+
+### Visualization & Application Layer
 
 * Streamlit
 * Plotly
@@ -381,40 +236,45 @@ Key analytics capabilities include:
 ### AI Integration
 
 * OpenAI API
-* AI Copilot
+
+### Development Tools
+
+* Git
+* GitHub
+* Jupyter Notebook
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
-Customer-Churn-Intelligence-System/
+customer-churn-intelligence-system/
 │
 ├── app/
-│   ├── streamlit_app.py
-│   └── assets/
+│   └── streamlit_app.py
 │
+├── api/
 ├── data/
-│   ├── superstore.csv
-│
-├── models/
-│   ├── model.pkl
-│   ├── scaler.pkl
-│
 ├── logs/
-│
+├── models/
+├── notebook/
 ├── src/
+├── tests/
 │
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-## Installation
+---
+
+## 🚀 Installation
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/customer-churn-intelligence-system.git
+git clone https://github.com/Dan-Dam/customer-churn-intelligence-system.git
+
 cd customer-churn-intelligence-system
 ```
 
@@ -422,6 +282,12 @@ cd customer-churn-intelligence-system
 
 ```bash
 python -m venv venv
+```
+
+### Activate Environment (Windows)
+
+```bash
+venv\Scripts\activate
 ```
 
 ### Install Dependencies
@@ -438,46 +304,43 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## Future Enhancements
+## 👨‍💻 Connect With Me
 
-* Docker Deployment
-* CI/CD Pipelines
-* Cloud Deployment (Azure / AWS / GCP)
-* REST API Services
-* PostgreSQL Integration
-* Advanced MLOps Monitoring
-* Real-Time Prediction Services
+### Daniel Damilola Amosun
 
----
+**Data Scientist | AI Engineer | Analytics Professional**
 
-## Author
+📧 Email: YOUR_EMAIL_HERE
 
-### Daniel Amosun
+💼 LinkedIn: https://www.linkedin.com/in/dan-dam-amosun
 
-Data Scientist | AI Engineer | Analytics Professional
-
-Focused on building intelligent analytics systems, explainable AI solutions, and decision intelligence platforms that drive measurable business outcomes.
+🐙 GitHub: https://github.com/Dan-Dam
 
 ---
 
-## InferaIQ
+## 🏢 Organization
 
-### Intelligence That Transforms Businesses
+### InferaIQ
 
-Core Competencies:
+**AI, Analytics, and Decision Intelligence Solutions**
 
-* Data Engineering & Architecture
-* Advanced Analytics & Business Intelligence
+Developed under the InferaIQ brand with a focus on:
+
 * Artificial Intelligence & Machine Learning
-* Decision Intelligence & Strategy
-* Intelligent Automation & Process Optimization
-* Cloud & Data Infrastructure
-* Enterprise Software & IT Solutions
-* Digital Transformation & Technology Consulting
-* AI Innovation & Product Development
+* Advanced Analytics & Business Intelligence
+* Decision Intelligence
+* Data Engineering
+* Intelligent Automation
+* AI Product Development
 
 ---
 
-## License
+## 📜 License
 
 MIT License
+
+Copyright © Daniel Amosun
+
+---
+
+⭐ If you found this project valuable, consider giving the repository a star.
