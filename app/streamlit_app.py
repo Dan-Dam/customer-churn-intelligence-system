@@ -3143,10 +3143,15 @@ elif page == "Monitoring":
 
         col1, col2, col3, col4, col5 = st.columns(5)
 
-        revenue_at_risk = batch_history.loc[
-            batch_history["Probability"] >= 0.60,
-            "Monetary"
-        ].sum()
+        revenue_at_risk = (
+
+            batch_history["Monetary"]
+
+            *
+
+            batch_history["Probability"]
+
+        ).sum()
 
         col1.metric(
             "Portfolio Customers",
