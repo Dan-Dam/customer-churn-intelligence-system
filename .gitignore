@@ -45,9 +45,13 @@ data/*.parquet
 # ==================================================
 models/*.pkl
 
-# Allow production models
+# Production Models
 !models/model.pkl
 !models/scaler.pkl
+
+# Model Performance Files
+!models/X_test.pkl
+!models/y_test.pkl
 
 # ==================================================
 # MLflow
@@ -65,6 +69,7 @@ logs/*.log
 # ==================================================
 executive_batch_report.pdf
 batch_predictions.xlsx
+batch_predictions.csv
 
 # ==================================================
 # Operating System Files
@@ -101,7 +106,7 @@ htmlcov/
 .pytest_cache/
 
 # ==================================================
-# Miscellaneous
+# Cache
 # ==================================================
 .cache/
 coverage.xml
