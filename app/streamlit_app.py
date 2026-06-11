@@ -791,25 +791,15 @@ if page == "Dashboard":
 
                     # =====================================
                     # CUSTOMER LIFETIME VALUE (CLV)
-                    # Enterprise-Grade Formula
                     # =====================================
 
-                    customer_lifespan_years = (
-                        max(tenure, 1) / 365
-                    )
-
-                    aov = (
-                        monetary / max(frequency, 1)
-                    )
-
+                    future_years = 3
                     profit_margin = 0.20
 
                     clv = (
-                        aov
+                        monetary
                         *
-                        frequency
-                        *
-                        customer_lifespan_years
+                        future_years
                         *
                         profit_margin
                     )
@@ -895,13 +885,13 @@ if page == "Dashboard":
                         f"{prob:.2%}"
                     )
 
-                    confidence = abs(
+                    decision_margin = abs(
                         prob - threshold
                     )
 
                     col2.metric(
-                        "Prediction Confidence",
-                        f"{confidence:.2f}"
+                        "Decision Margin",
+                        f"{decision_margin:.2f}"
                     )
 
                     latency = (
@@ -1498,10 +1488,18 @@ elif page == "Batch Prediction":
                     uploaded_file
                 )
 
-            elif file_extension in ["xlsx", "xls"]:
+            elif file_extension == "xlsx":
 
                 batch_df = pd.read_excel(
-                    uploaded_file
+                    uploaded_file,
+                    engine="openpyxl"
+                )
+
+            elif file_extension == "xls":
+
+                batch_df = pd.read_excel(
+                    uploaded_file,
+                    engine="xlrd"
                 )
 
             else:
@@ -1586,29 +1584,11 @@ elif page == "Batch Prediction":
 
                 batch_df["Customer_Lifetime_Value"] = (
 
-                    (
-                        batch_df["Monetary"]
-
-                        /
-
-                        batch_df["Frequency"].replace(0, 1)
-
-                    )
+                    batch_df["Monetary"]
 
                     *
 
-                    batch_df["Frequency"]
-
-                    *
-
-                    (
-                        batch_df["Tenure"].replace(0, 1)
-
-                        /
-
-                        365
-
-                    )
+                    3
 
                     *
 
@@ -1819,10 +1799,15 @@ elif page == "Batch Prediction":
                     critical_customers
                 )
 
-                revenue_at_risk = batch_df.loc[
-                    batch_df["Probability"] >= 0.60,
-                    "Monetary"
-                ].sum()
+                revenue_at_risk = (
+
+                    batch_df["Monetary"]
+
+                    *
+
+                    batch_df["Probability"]
+
+                ).sum()
 
                 portfolio_health = (
                     (1 - probabilities.mean()) * 100
@@ -2160,11 +2145,15 @@ elif page == "Analytics":
                 f"{rfm['probability'].mean():.2%}"
             )
 
-            revenue_risk = rfm.loc[
-                rfm["Risk_Segment"]
-                .str.contains("High|Critical"),
-                "Monetary"
-            ].sum()
+            revenue_risk = (
+
+                rfm["Monetary"]
+
+                *
+
+                rfm["probability"]
+
+            ).sum()
 
             col4.metric(
                 "Revenue At Risk",
@@ -3000,6 +2989,10 @@ elif page == "Model Performance":
     except Exception as e:
 
         logger.error(
+            f"Performance Error: {e}"
+        )
+
+        st.error(
             f"Performance Error: {e}"
         )
 
